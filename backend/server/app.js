@@ -29,9 +29,11 @@ passport.deserializeUser(function(id, done) {
 }); 
 
 // api
-app.get('/', (req, res)=>{
-    res.send('home')
-});
+app.get('/auth/github',
+    passport.authenticate('github'),
+    function(req, res){}
+);
+
 
 app.listen(serverPort, () => {
     console.log('Server is running on ' + serverPort);
