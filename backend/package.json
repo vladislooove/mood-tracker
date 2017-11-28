@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/app.js",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +15,7 @@
     "express": "^4.16.2",
     "mongoose": "^4.13.5",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-facebook": "^2.1.1",
+    "passport-github2": "^0.1.11"
   }
 }
