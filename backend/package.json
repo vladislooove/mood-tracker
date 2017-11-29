@@ -1,21 +1,22 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server/app.js",  
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "body-parser": "^1.18.2",
-    "cors": "^2.8.4",
-    "express": "^4.16.2",
-    "mongoose": "^4.13.5",
-    "passport": "^0.4.0",
-    "passport-facebook": "^2.1.1",
-    "passport-github2": "^0.1.11"
+  "name": "node-authentication",
+  "main": "server.js",
+  "dependencies" : {
+    "express": "~4.14.0",
+    "ejs": "~2.5.2",
+    "mongoose": "~4.13.1",
+    "passport": "~0.3.2",
+    "passport-local" : "~1.0.0",
+    "passport-facebook": "~2.1.1",
+    "passport-twitter": "~1.0.4",
+    "passport-google-oauth" : "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "bcrypt-nodejs" : "latest",
+
+    "morgan": "~1.7.0",
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "method-override": "~2.3.6",
+    "express-session": "~1.14.1"
   }
 }
